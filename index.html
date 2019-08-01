@@ -2,46 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelsi Hoyle's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Kelsi Hoyle</title>
 </head>
 
 <body>
-    <header>
-        <div class="headerContent clearfix">
-            <h1>Kelsi Hoyle</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<header class="hidden">
+        <ul id="header-nav">
+            <li class="info" data-type="about">Who am I?</li>
+            <li class=" info" data-type="portfolio">What do I do?</li>
+            <li class="info" data-type="contact">Get more info!</li>
+        </ul>
     </header>
 
-    <section class="mainContent">
-        <h2>About Me</h2>
-        <div class="content clearfix aboutMe">
-            <img src="assets/images/portrait.jpg" alt="portrait of Kelsi" id="portrait" />
-            <p>I am a mom turned developer. I began coding as a way to keep myself entertained and challenged during my
-                many
-                late nights
-                with a baby. It turned out that I found a passion in the puzzles and wizardry that I programming! I am
-                lucky enough to change my passion into a career!</p>
-            <p>When I am not learning and creating, you can find me hiking, cooking, and cuddling my two dogs. I love
-                exploring and the discovering!</p>
-            <p>Feel free to poke around to learn more about me and my many projects. Thank you for stopping by!</p>
+    <div class="main-content">
+        <div class="landing-window">
+            <div id="landing-content">
+                <h2>Hi! I am <span id="i-am"></span></h2>
+                <ul id="nav">
+                    <li class="info" data-type="about">Who am I?</li>
+                    <li class=" info" data-type="portfolio">What do I do?</li>
+                    <li class="info" data-type="contact">Get more info!</li>
+                </ul>
+            </div>
         </div>
-    </section>
+        <div class="info-display">
+            <div id="about-me">
+                <div class="content clearfix">
+                    <div class="float-left">
+                        <h3>Hello, I'm Kelsi!</h3>
+                        <img src="assets/images/portrait.jpg" alt="portrait" class="portrait">
+                    </div>
+                    <div class="float-right ">
+                        <p>I started coding as a hobby, and it quickly became a passion. The puzzles of the new
+                            technologies drew me in and I have been constantly learning ever since! When I'm not coding,
+                            you can find me hiking with my family or creating a new recipe in the kitchen.</p>
 
-    <footer>
-        <p> Copyright &copy;</p>
-    </footer>
+                        <p>Currently coding from Denver, Colorado.</p>
+                        <h4>Technologies:</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>BootStrap4</li>
+                            <li>JQuery</li>
+                            <li>JavaScript</li>
+                            <li>FireBase</li>
+                            <li>Node.js</li>
+                        </ul>
+                        <p>And always learning more!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-display">
+                <div class="content">
+                <h3>Portfolio</h3>
+                <div id="portfolio-div">
+                    <!-- where js will import divs -->
+                </div>
+            </div>
+            </div>
+            <div id="contact-display">
+                <div class="info-div">
+                    <div class="content">
+                        <h3>Contact</h3>
+                        <p>If you have any questions, suggestions, or proposals for me, please reach out!</p>
+                        <div class="contact-buttons">
+                            <a href="https://github.com/kelsimhoyle" target="_blank" class="contact">
+                                <img src="assets/images/GitHub-Mark-64px.png" alt="github" class="contact">
+                            </a>
+                            <a href="#" target="_blank" class="contact">
+                                <img src="assets/images/LI-In-Bug.png" alt="linkedin" class="contact">
+                            </a>
+                            <a href="mailto:kelsimhoyle@gmail.com" target="_blank" class="contact"><img src="assets/images/email.png"
+                                    class="contact" alt="email"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/logic.js"></script>
 </body>
-
 
 </html>
