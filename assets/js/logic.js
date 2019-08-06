@@ -2,7 +2,7 @@
 
 var projects = [
     project1 = {
-        name: "Daily Sweat: Workout Website",
+        name: "Daily Sweat: Workout",
         deployed: "https://wynnc.github.io/hippie_shizzz/",
         githhub: "https://github.com/wynnc/hippie_shizzz",
         image: "assets/images/portfolio-images/dailySweat.png",
@@ -76,7 +76,7 @@ function generatePortfolio() {
         var links = $("<div>").addClass("links")
         var deployed = $("<a>").attr("href", projects[i].deployed).attr("target", "_blank").html(`<img src="assets/images/view.png" alt="View Project">`);
         var github = $("<a>").attr("href", projects[i].githhub).attr("target", "_blank").html(`<img src="assets/images/repo.png" alt="View GitHub Repository">`);
-        var description = $("<p>").text(projects[i].description);
+        var description = $("<p>").text(projects[i].description).addClass("description");
         links.append(github, deployed);
         flexDiv.append(name, description, links);
         hiddenDiv.append(flexDiv);
@@ -96,10 +96,9 @@ $(window).scroll(function() {
     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     var top_of_screen = $(window).scrollTop();
 
-    if (top_of_screen > bottom_of_element) {
+    // if (top_of_screen > bottom_of_element) {
         
-        console.log("stick");
-    }
+    // }
 
     
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
@@ -118,7 +117,7 @@ $(window).scroll(function() {
 generatePortfolio();
 
 
-$(".info").on("click", function(){
+$(".nav-link").on("click", function(){
     $("#content-display").empty();
     var infoType = $(this).attr("data-type");
     if (infoType === "portfolio") {

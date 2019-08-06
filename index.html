@@ -5,71 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <title>Kelsi Hoyle</title>
 </head>
 
 <body>
-<header class="hidden">
-        <ul id="header-nav">
-            <li class="info" data-type="about">Who am I?</li>
-            <li class=" info" data-type="portfolio">What do I do?</li>
-            <li class="info" data-type="contact">Get more info!</li>
-        </ul>
+    <header class="hidden">
+        <div class="clearfix">
+            <div class="header-left">
+                <h3>Kelsi Hoyle</h3>
+            </div>
+            <div class="header-right">
+                <ul id="header-nav">
+                    <li class="info nav-link" data-type="about">About</li>
+                    <li class=" info nav-link" data-type="portfolio">Portfolio</li>
+                    <li class="info nav-link" data-type="contact">Contact</li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <div class="main-content">
         <div class="landing-window">
             <div id="landing-content">
-                <h2>Hi! I am <span id="i-am"></span></h2>
+                <h2>Hello! I am <span id="i-am"></span></h2>
                 <ul id="nav">
-                    <li class="info" data-type="about">Who am I?</li>
-                    <li class=" info" data-type="portfolio">What do I do?</li>
-                    <li class="info" data-type="contact">Get more info!</li>
+                    <li class="landing-nav nav-link" data-type="about">Who am I?</li>
+                    <li class=" landing-nav nav-link" data-type="portfolio">What do I do?</li>
+                    <li class="landing-nav nav-link" data-type="contact">Get more info!</li>
                 </ul>
             </div>
         </div>
         <div class="info-display">
             <div id="about-me">
-                <div class="content clearfix">
-                    <div class="float-left">
-                        <h3>Hello, I'm Kelsi!</h3>
-                        <img src="assets/images/portrait.jpg" alt="portrait" class="portrait">
-                    </div>
-                    <div class="float-right ">
-                        <p>I started coding as a hobby, and it quickly became a passion. The puzzles of the new
-                            technologies drew me in and I have been constantly learning ever since! When I'm not coding,
-                            you can find me hiking with my family or creating a new recipe in the kitchen.</p>
+                <h2>About Me</h2>
+                <ul>
+                    <li class="describe">
+                        <i class="material-icons list-icon">whatshot</i>
+                        <h5>Passionate</h5>
+                        <p>I am invested in every opportunity.</p>
+                    </li>
+                    <li class="describe">
+                        <i class="material-icons list-icon">terrain</i>
+                        <h5>Adventerous</h5>
+                        <p>I am in my element when I am facing a challening and new problem.</p>
+                    </li>
+                    <li class="describe">
+                        <i class="material-icons list-icon">trending_up</i>
+                        <h5>Always Growing</h5>
+                        <p>I actively create opportunities to broaden my knowledge and skills.</p>
+                    </li>
+                </ul>
+                <div class="content">
+                    <div class="clearfix">
+                            <div class="float-right">
+                                    <img src="assets/images/portrait.jpg" alt="portrait" class="portrait">
+                                </div>
+                        <div class="float-left">
+                            <p>I started coding as a hobby, and it quickly became a passion. The puzzles of the new
+                                technologies drew me in and I have been constantly learning ever since! When I'm not
+                                coding,
+                                you can find me hiking with my family or creating a new recipe in the kitchen.</p>
 
-                        <p>Currently coding from Denver, Colorado.</p>
-                        <h4>Technologies:</h4>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>BootStrap4</li>
-                            <li>JQuery</li>
-                            <li>JavaScript</li>
-                            <li>FireBase</li>
-                            <li>Node.js</li>
-                        </ul>
-                        <p>And always learning more!</p>
+                                <h4>Technologies:</h4>
+                    <p>HTML5, CSS3, BootStrap, Materialize, JavaScript, JQuery, MySQL, Node.js, Express, Sequelize, Handlebars Templating, and always adding more to my skills.</p>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
             <div id="portfolio-display">
                 <div class="content">
-                <h3>Portfolio</h3>
-                <div id="portfolio-div">
-                    <!-- where js will import divs -->
+                    <h2>Portfolio</h2>
+                    <div id="portfolio-div">
+                        <!-- where js will import divs -->
+                    </div>
                 </div>
-            </div>
             </div>
             <div id="contact-display">
                 <div class="info-div">
                     <div class="content">
-                        <h3>Contact</h3>
+                        <h2>Contact</h2>
                         <p>If you have any questions, suggestions, or proposals for me, please reach out!</p>
                         <div class="contact-buttons">
                             <a href="https://github.com/kelsimhoyle" target="_blank" class="contact">
@@ -78,15 +98,18 @@
                             <a href="#" target="_blank" class="contact">
                                 <img src="assets/images/LI-In-Bug.png" alt="linkedin" class="contact">
                             </a>
-                            <a href="mailto:kelsimhoyle@gmail.com" target="_blank" class="contact"><img src="assets/images/email.png"
-                                    class="contact" alt="email"></a>
+                            <a href="mailto:kelsimhoyle@gmail.com" target="_blank" class="contact"><img
+                                    src="assets/images/email.png" class="contact" alt="email"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <footer>
+        <p>Kelsi Hoyle 2019</p>
+        <p><i class="material-icons">place</i>Denver, Colorado</p>
+    </footer>
 
     <script src=" https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">

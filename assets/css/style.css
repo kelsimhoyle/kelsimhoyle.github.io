@@ -1,11 +1,9 @@
-
-
 body {
-    background-image: linear-gradient(to right, #F7B7B7, #85D6CB);
-    background-repeat: none;
-   color: whitesmoke;
+   background-image: whitesmoke;
+   background-repeat: none;
+   color: #696969;
    height: 110vh;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -13,7 +11,7 @@ body {
    content: "";
    clear: both;
    display: table;
- }
+}
 
 header {
    background-color: #F77B77;
@@ -24,19 +22,33 @@ header {
 }
 
 #header-nav {
-   width: 80%;
    margin: 1% 10%;
 }
 
 #header-nav li {
-   font-size: 20px;
+   color: whitesmoke;
+   font-size: 18px;
    padding: 1% 0;
+}
+
+h3 {
+   color: whitesmoke;
+   font-size: 24px;
+}
+
+.header-left {
+   float: left;
+   width: 30%;
+}
+
+.header-right {
+   float: right;
+   width: 60%;
 }
 
 .main-content {
    margin: auto;
 }
-
 
 #landing-content {
    color: whitesmoke;
@@ -45,14 +57,14 @@ header {
    width: 80%;
    height: 70%;
    margin: auto;
-   padding: 15% 0;
+   padding-top: 15%;
 }
 
-.landing-window{
+.landing-window {
    height: 100vh;
-   background-color: #F77B77; 
-   /* box-shadow: 0px 10px 8px 5px grey; */
+   background-color: #F77B77;
 }
+
 .landing-window,
 #portfolio-display,
 #contact-display {
@@ -60,31 +72,44 @@ header {
    position: relative;
 }
 
-#about-me {
-   height: 100vh;
+#about-me,
+#portfolio-display {
+   height: 90vh;
+   padding: 2% 10%;
 }
 
-
-.info-div {
-   margin: 10% auto;
+#contact-display {
+   height: 60vh;
+   padding: 2% 10%;
 }
 
+#portfolio-display,
+footer {
+   background-color: #DCDCDC;
+}
+
+footer {
+   margin: auto;
+   padding: 5% 0 3% 0;
+}
+
+.info-display {
+   margin: auto;
+}
 
 h2,
 h3,
-h4, 
+h4,
 li.info {
-   font-family: 'Roboto Mono', monospace;
+   /* font-family: 'Roboto Mono', monospace; */
    text-align: center;
 }
-
-
 
 h2 {
    font-size: 44px;
    line-height: 2;
    margin: auto;
-  
+
 }
 
 h3 {
@@ -108,7 +133,6 @@ ul {
 
 p {
    text-align: center;
-
    line-height: 1.5;
 }
 
@@ -116,19 +140,30 @@ p {
    font-size: 24px;
 }
 
-li.info {
+li.landing-nav {
    cursor: pointer;
    width: 30%;
    padding: 3% 0;
    border: 2px solid whitesmoke;
-   text-align: center;}
+   text-align: center;
+}
 
-li.info:hover {
+li.landing-nav:hover {
    background-color: rgba(255, 141, 135, .5);
 }
 
+li.describe {
+   width: 25%;
+   justify-content: center;
+   text-align: center;
+}
+
+.list-icon {
+   font-size: 60px;
+}
+
 #content-display {
-   margin: 10% auto;
+   margin: 0 auto;
 }
 
 .projects-div {
@@ -152,7 +187,12 @@ div.text {
    left: 0;
    height: 100%;
    display: inline-block;
-   background-color: rgba(247, 123, 118, .8);
+   background-color: whitesmoke;
+}
+
+.project-info p {
+   font-size: 18px;
+   line-height: 1.2;
 }
 
 .links {
@@ -173,42 +213,38 @@ div.text {
    align-items: center;
 }
 
-.project-info p {
-   margin: 2%;
+p.description {
+   font-size: 1rem;
+   line-height: 1.1;
+   margin-top: 2%;
 }
 
 .hidden {
    display: none;
 }
 
-
-
 .portrait {
    width: 100%;
    height: auto;
+   box-shadow: 0 10px 6px -6px #777;
 }
 
 .float-left {
    float: left;
-   width: 30%;
+   width: 60%;
+   padding: 2% 5% 5% 0;
 }
 
-.float-left h3 {
-   text-align: right;
-   line-height: 1.5;
-   letter-spacing: 3px;
-}
 
 .float-right {
    float: right;
-   padding: 5% 5% 5% 0;
-   width: 60%;
+   padding: 2% 5% 5% 0;
+   width: 30%;
 }
 
 .content {
-   background-color: rgba(255, 141, 135, .5);
-   margin: 5% 0;
    padding: 2%;
+   margin-top: 1%;
 }
 
 .content p {
@@ -223,7 +259,7 @@ div.text {
    margin: 2%;
 }
 
-img.contact  {
+img.contact {
    width: 64px;
 }
 
@@ -245,5 +281,119 @@ a.contact {
 #portfolio-div {
    position: relative;
    left: 50%;
-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    p {
+       font-size: 1rem;
+      line-height: 1.2;
+   }
+
+   #about-me,
+   #portfolio-display,
+   #contact-display {
+      height: auto;
+   }
+
+
+   .list-icon {
+      font-size: .9rem;
+   }
+
+
+   #about-me {
+      font-size: 1rem;
+   }
+
+   h2, 
+   h4,
+   h3 {
+      font-size: 1.5rem;
+   }
+
+   .float-left {
+      float: none;
+      width: 100%;
+   }
+
+   .project {
+      height: 40%;
+      width: 47%;
+   }
+}
+
+/* tablet view */
+@media only screen and (max-width: 768px) {
+   #about-me,
+   #portfolio-display,
+   #contact-display {
+      width: 95%;
+      padding: 0;
+   }
+
+   p,
+   .content p{
+      font-size: .9rem;
+   }
+
+   h4 {
+      font-size: 1.2rem;
+   }
+
+   .list-icon {
+      font-size: 1.7rem;
+   }
+
+   #about-me,
+   #portfolio-display,
+   #contact-display {
+      width: 95%;
+      padding: 0;
+   }
+}
+
+/* landscape mobile phone */
+@media only screen and (max-width: 640px) {
+   body {
+      width: 100%;
+      font-size: .7rem;
+   }
+
+   #landing-content ul {
+      flex-direction: column;
+   }
+
+   li.landing-nav {
+      width: 100%;
+      margin-top: 2%;
+   }
+
+   .float-right {
+      float: none;
+      width: 100%
+   }
+
+   #portrait {
+       width: 100%;
+      padding: none;
+   }
+
+
+   .project {
+      margin: 0;
+      width: 100%;
+   }
+
+  #about-me,
+  #portfolio-display,
+  #contact-display {
+     width: 99%;
+     padding: 0;
+  }
+
+  
+
 }

@@ -1,1 +1,0 @@
-# kelsimhoyle.github.io
