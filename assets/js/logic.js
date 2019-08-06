@@ -13,7 +13,7 @@ var projects = [
         deployed: "https://young-falls-67340.herokuapp.com/",
         githhub: "https://github.com/kelsimhoyle/friend-finder",
         image: "assets/images/portfolio-images/friendFinder.png",
-        description: "Take a survey and see whom you will match with! This is a Node app with a SQL Database."
+        description: "Take a survey and see who you will match with! This is a Node app with a SQL Database."
     },
     project3 = {
         name: "'Bamazon App'",
