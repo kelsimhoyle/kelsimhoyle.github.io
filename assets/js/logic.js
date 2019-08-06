@@ -3,25 +3,33 @@
 var projects = [
     project1 = {
         name: "Daily Sweat: Workout",
-        deployed: "https://wynnc.github.io/hippie_shizzz/",
-        githhub: "https://github.com/wynnc/hippie_shizzz",
+        deployed: "http://www.kelsihoyle.me/daily-sweat/.",
+        githhub: "https://github.com/kelsimhoyle/daily-sweat",
         image: "assets/images/portfolio-images/dailySweat.png",
         description: "Provides workouts based on a few selections. Either videos for a user to experience at home, gyms where the user can join classes, or meetups where the user can participate with a group."
     },
     project2 = {
-        name: "Crystal Collector Game",
-        deployed: "https://kelsimhoyle.github.io/unit-4-game/",
-        githhub: "https://github.com/kelsimhoyle/unit-4-game",
-        image: "assets/images/portfolio-images/crystalCollector.png",
-        description: "Game where the user must figure out a crystal's value and add up to the targeted value."
+        name: "Friend Finder",
+        deployed: "https://young-falls-67340.herokuapp.com/",
+        githhub: "https://github.com/kelsimhoyle/friend-finder",
+        image: "assets/images/portfolio-images/friendFinder.png",
+        description: "Take a survey and see who you match with! This is a Node app with a SQL Database."
     },
     project3 = {
-        name: "Gif Generator",
-        deployed: "https://kelsimhoyle.github.io/gif-generator/",
-        githhub: "https://github.com/kelsimhoyle/gif-generator",
-        image: "assets/images/portfolio-images/gifGenerator.png",
-        description: "Giphy API is used in order to display gifs base on memes. The user may use the meme categories already provided on the page, or add their own!"
+        name: "'Bamazon App'",
+        deployed: "https://github.com/kelsimhoyle/mysqlhw",
+        githhub: "https://github.com/kelsimhoyle/mysqlhw",
+        image: "assets/images/portfolio-images/bamazon.jpg",
+        description: "This Node command line app acts like on online storefront. With the use of MySQL, the user is able to interact with the database that has all of the stock information."
     }
+    // , 
+    // project4 = {
+    //     name: "",
+    //     deployed: "",
+    //     github: "",
+    //     image: "",
+    //     description: ""
+    // }
 ]
 
 var iAm = ["Kelsi.", "a programmer.", "a creator.", "a learner.", "a dreamer." ];
@@ -73,12 +81,10 @@ function generatePortfolio() {
         var image = $("<img>").attr("src", projects[i].image);
         var hiddenDiv = $("<div>").addClass("hidden");
         var flexDiv = $("<div>").addClass("project-info");
-        var links = $("<div>").addClass("links")
-        var deployed = $("<a>").attr("href", projects[i].deployed).attr("target", "_blank").html(`<img src="assets/images/view.png" alt="View Project">`);
-        var github = $("<a>").attr("href", projects[i].githhub).attr("target", "_blank").html(`<img src="assets/images/repo.png" alt="View GitHub Repository">`);
+        var deployed = $("<a>").attr("href", projects[i].deployed).attr("target", "_blank").text("View Project");
+        var github = $("<a>").attr("href", projects[i].githhub).attr("target", "_blank").text("View on GitHub");
         var description = $("<p>").text(projects[i].description).addClass("description");
-        links.append(github, deployed);
-        flexDiv.append(name, description, links);
+        flexDiv.append(name, description, deployed, github);
         hiddenDiv.append(flexDiv);
         projectDiv.append(image, hiddenDiv);
         portfolioDisplay.append(projectDiv);
