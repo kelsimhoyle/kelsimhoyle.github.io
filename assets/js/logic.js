@@ -2,37 +2,37 @@
 
 var projects = [
     project1 = {
-        name: "Daily Sweat: Workout",
+        name: "Daily Sweat: Workout App",
         deployed: "http://www.kelsihoyle.me/daily-sweat/.",
         githhub: "https://github.com/kelsimhoyle/daily-sweat",
         image: "assets/images/portfolio-images/dailySweat.png",
-        description: "Provides workouts based on a few selections. Either videos for a user to experience at home, gyms where the user can join classes, or meetups where the user can participate with a group."
+        description: "Provides three different workout options for the user, based on their preferences. Technologies: JavaScript, JQuery, AJAX, and Materialize."
     },
     project2 = {
         name: "Friend Finder",
         deployed: "https://young-falls-67340.herokuapp.com/",
         githhub: "https://github.com/kelsimhoyle/friend-finder",
         image: "assets/images/portfolio-images/friendFinder.png",
-        description: "Take a survey and see who you will match with! This is a Node app with a SQL Database."
+        description: "Take a survey and see who you will match with! Technologies: Node.js, MySQL database, and Bootstrap"
     },
     project3 = {
         name: "'Bamazon App'",
         deployed: "https://github.com/kelsimhoyle/mysqlhw",
         githhub: "https://github.com/kelsimhoyle/mysqlhw",
         image: "assets/images/portfolio-images/bamazon.jpg",
-        description: "This Node command line app acts as an online storefront. With the use of MySQL, the user is able to interact with the database that has all of the stock information."
+        description: "This Node command line app acts as an online storefront. With the use of MySQL and the Inquirer node module, the user is able to interact with the database that has all of the stock information."
     }
-    // , 
-    // project4 = {
-    //     name: "",
-    //     deployed: "",
-    //     github: "",
-    //     image: "",
-    //     description: ""
-    // }
+    , 
+    project4 = {
+        name: "In High Spirits: Colorado Distillery finder",
+        deployed: "https://github.com/kelsimhoyle/project-2",
+        github: "https://murmuring-temple-41281.herokuapp.com/",
+        image: "assets/images/portfolio-images/inHighSpirits.png",
+        description: "Users can explore all that Colorado distilleries has to offer. Technologies: Node.js, Sequelize, Passport, Session, Handlebars, and Materialize. "
+    }
 ]
 
-var iAm = ["Kelsi.", "a programmer.", "a creator.", "a learner.", "a dreamer." ];
+var iAm = ["Kelsi.", "a full stack developer.", "a creator.", "a learner.", "a dreamer.", "an educator." ];
 var currentWord = 0;
 var currentLetter = 0;
 var word = "";
