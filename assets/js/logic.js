@@ -25,8 +25,8 @@ var projects = [
     , 
     project4 = {
         name: "In High Spirits: Colorado Distillery finder",
-        deployed: "https://github.com/kelsimhoyle/project-2",
-        github: "https://murmuring-temple-41281.herokuapp.com/",
+        deployed: "https://murmuring-temple-41281.herokuapp.com/",
+        github: "https://github.com/kelsimhoyle/project-2",
         image: "assets/images/portfolio-images/inHighSpirits.png",
         description: "Users can explore all that Colorado distilleries has to offer. Technologies: Node.js, Sequelize, Passport, Session, Handlebars, and Materialize. "
     }
